@@ -30,8 +30,8 @@ const services = [
     id: "web-development",
     title: "Web Development",
     shortDesc: "Custom websites with elegant design and powerful functionality",
-    icon: "/placeholder.svg?height=40&width=40",
-    image: "/placeholder.svg?height=600&width=800",
+    icon: "/logo.jpg",
+    image: "/19.jpg",
     features: [
       "Responsive design for all devices",
       "Custom CMS integration",
@@ -44,8 +44,8 @@ const services = [
     id: "mobile-applications",
     title: "Mobile Applications",
     shortDesc: "Native and cross-platform apps with seamless user experience",
-    icon: "/placeholder.svg?height=40&width=40",
-    image: "/placeholder.svg?height=600&width=800",
+    icon: "/logo.jpg",
+    image: "/25.jpg",
     features: [
       "iOS and Android development",
       "Cross-platform solutions",
@@ -58,8 +58,8 @@ const services = [
     id: "ui-ux-design",
     title: "UI/UX Design",
     shortDesc: "Intuitive interfaces that enhance user engagement and satisfaction",
-    icon: "/placeholder.svg?height=40&width=40",
-    image: "/placeholder.svg?height=600&width=800",
+    icon: "/logo.jpg",
+    image: "/20.jpg",
     features: [
       "User research and personas",
       "Wireframing and prototyping",
@@ -72,8 +72,8 @@ const services = [
     id: "branding",
     title: "Branding",
     shortDesc: "Distinctive brand identity that resonates with your target audience",
-    icon: "/placeholder.svg?height=40&width=40",
-    image: "/placeholder.svg?height=600&width=800",
+    icon: "/logo.jpg",
+    image: "/22.jpg",
     features: [
       "Logo design and visual identity",
       "Brand strategy and positioning",
@@ -86,8 +86,8 @@ const services = [
     id: "digital-marketing",
     title: "Digital Marketing",
     shortDesc: "Strategic campaigns that drive traffic, engagement, and conversions",
-    icon: "/placeholder.svg?height=40&width=40",
-    image: "/placeholder.svg?height=600&width=800",
+    icon: "/logo.jpg",
+    image: "/23.jpg",
     features: [
       "SEO and content marketing",
       "Social media management",
@@ -100,8 +100,8 @@ const services = [
     id: "ecommerce-solutions",
     title: "E-commerce Solutions",
     shortDesc: "Robust online stores that drive sales and enhance customer experience",
-    icon: "/placeholder.svg?height=40&width=40",
-    image: "/placeholder.svg?height=600&width=800",
+    icon: "/logo.jpg",
+    image: "/24.jpg",
     features: [
       "Custom e-commerce development",
       "Shopping cart and checkout optimization",
@@ -120,7 +120,7 @@ export default function ServicesPage() {
         {/* Background */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1920"
+            src="/bg.jpg"
             alt="Services Background"
             fill
             className="object-cover brightness-50"
@@ -175,7 +175,7 @@ export default function ServicesPage() {
                 <h3 className="text-xl font-bold mb-3">{service.title}</h3>
                 <p className="text-offwhite/70 mb-6">{service.shortDesc}</p>
                 <Link
-                  href={`/services/${service.id}`}
+                  href={`/service/${service.id}`}
                   className="inline-flex items-center text-gold group-hover:text-gold-light transition-colors"
                 >
                   Learn More <ArrowRight size={16} className="ml-2 group-hover:ml-3 transition-all" />

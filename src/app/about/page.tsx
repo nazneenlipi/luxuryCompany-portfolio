@@ -87,7 +87,7 @@ export default function AboutPage() {
         {/* Background */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1920"
+            src="/bg.jpg"
             alt="About Us Background"
             fill
             className="object-cover brightness-50"

@@ -35,8 +35,8 @@ const services = [
     shortDesc: "Custom websites with elegant design and powerful functionality",
     longDesc:
       "Our web development services focus on creating custom, high-performance websites that align with your brand identity and business goals. We combine cutting-edge technologies with creative design to deliver websites that not only look stunning but also provide exceptional user experiences.",
-    icon: "/placeholder.svg?height=40&width=40",
-    image: "/placeholder.svg?height=600&width=800",
+      icon: "/logo.jpg",
+    image: "/19.jpg",
     features: [
       "Responsive design for all devices",
       "Custom CMS integration",
@@ -80,8 +80,8 @@ const services = [
     shortDesc: "Native and cross-platform apps with seamless user experience",
     longDesc:
       "Our mobile application development services help businesses create powerful, user-friendly apps for iOS and Android platforms. Whether you need a native app for maximum performance or a cross-platform solution for broader reach, our team delivers mobile experiences that engage users and drive results.",
-    icon: "/placeholder.svg?height=40&width=40",
-    image: "/placeholder.svg?height=600&width=800",
+      icon: "/logo.jpg",
+      image: "/25.jpg",
     features: [
       "iOS and Android development",
       "Cross-platform solutions",
@@ -125,8 +125,8 @@ const services = [
     shortDesc: "Intuitive interfaces that enhance user engagement and satisfaction",
     longDesc:
       "Our UI/UX design services focus on creating intuitive, engaging, and aesthetically pleasing digital experiences. We combine user research, interaction design, and visual design to create interfaces that not only look beautiful but also provide seamless user experiences that drive engagement and conversions.",
-    icon: "/placeholder.svg?height=40&width=40",
-    image: "/placeholder.svg?height=600&width=800",
+      icon: "/logo.jpg",
+      image: "/20.jpg",
     features: [
       "User research and personas",
       "Wireframing and prototyping",
@@ -169,8 +169,8 @@ const services = [
     shortDesc: "Distinctive brand identity that resonates with your target audience",
     longDesc:
       "Our branding services help businesses establish a strong, cohesive identity that resonates with their target audience. From logo design and visual identity to brand strategy and messaging, we create comprehensive branding solutions that differentiate your business and build lasting connections with your customers.",
-    icon: "/placeholder.svg?height=40&width=40",
-    image: "/placeholder.svg?height=600&width=800",
+      icon: "/logo.jpg",
+      image: "/22.jpg",
     features: [
       "Logo design and visual identity",
       "Brand strategy and positioning",
@@ -220,8 +220,8 @@ const services = [
     shortDesc: "Strategic campaigns that drive traffic, engagement, and conversions",
     longDesc:
       "Our digital marketing services help businesses reach their target audience, drive traffic, and generate leads through strategic online campaigns. From SEO and content marketing to social media and paid advertising, we develop comprehensive marketing strategies that align with your business goals and deliver measurable results.",
-    icon: "/placeholder.svg?height=40&width=40",
-    image: "/placeholder.svg?height=600&width=800",
+      icon: "/logo.jpg",
+      image: "/23.jpg",
     features: [
       "SEO and content marketing",
       "Social media management",
@@ -273,8 +273,8 @@ const services = [
     shortDesc: "Robust online stores that drive sales and enhance customer experience",
     longDesc:
       "Our e-commerce solutions help businesses establish and grow their online retail presence. From custom e-commerce development to platform migration and optimization, we create online stores that provide seamless shopping experiences, efficient operations, and maximum conversion rates.",
-    icon: "/placeholder.svg?height=40&width=40",
-    image: "/placeholder.svg?height=600&width=800",
+      icon: "/logo.jpg",
+      image: "/24.jpg",
     features: [
       "Custom e-commerce development",
       "Shopping cart and checkout optimization",
@@ -354,7 +354,7 @@ export default function ServiceDetailPage() {
         <h1 className="text-3xl font-bold mb-4">Service Not Found</h1>
         <p className="text-offwhite/80 mb-8">The service you're looking for doesn't exist or has been moved.</p>
         <Link
-          href="/services"
+          href="/service"
           className="px-8 py-3 bg-gold text-black hover:bg-gold-light transition-colors duration-300 font-medium tracking-wide"
         >
           View All Services
@@ -389,7 +389,7 @@ export default function ServiceDetailPage() {
           <motion.div initial="hidden" animate="visible" variants={staggerContainer} className="max-w-3xl">
             <motion.div variants={fadeIn} className="inline-block mb-4">
               <Link
-                href="/services"
+                href="/service"
                 className="text-gold border-b border-gold pb-1 uppercase text-sm tracking-wider flex items-center"
               >
                 <ArrowLeft size={14} className="mr-2" /> Back to Services
@@ -442,7 +442,7 @@ export default function ServiceDetailPage() {
             <motion.div variants={fadeIn}>
               <div className="relative h-[400px] w-full">
                 <Image
-                  src="/placeholder.svg?height=500&width=600"
+                  src={service.image}
                   alt={`${service.title} Features`}
                   fill
                   className="object-cover"
