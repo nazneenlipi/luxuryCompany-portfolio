@@ -181,8 +181,10 @@ export default function Home() {
                 Get a Quote
               </Link>
               <Link
-                href="/portfolio"
+                href="https://nazneen.info" // আপনার পোর্টেফোলিওর লিঙ্ক এখানে দিন।
                 className="px-8 py-3 bg-transparent border border-gold text-gold hover:bg-gold/10 transition-colors duration-300 font-medium tracking-wide flex items-center justify-center"
+                target="_blank" // নতুন ট্যাবে খুলতে চাইলে এটি যোগ করুন।
+                rel="noopener noreferrer" // নিরাপত্তা ও পারফরম্যান্সের জন্য এটি যোগ করুন।
               >
                 View Our Work <ChevronRight size={16} className="ml-2" />
               </Link>
@@ -556,12 +558,8 @@ export default function Home() {
                   />
                 </div>
                 <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                  <h3 className="text-xl font-bold mb-2">
-                  {project.title}
-                  </h3>
-                  <p className="text-offwhite/80 mb-4">
-                  {project.category}
-                  </p>
+                  <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                  <p className="text-offwhite/80 mb-4">{project.category}</p>
                   <Link
                     href="/contact"
                     className="text-gold hover:text-gold-light transition-colors inline-flex items-center"
