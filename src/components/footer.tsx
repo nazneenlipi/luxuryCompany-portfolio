@@ -6,7 +6,6 @@ export default function Footer() {
     <footer className="bg-black border-t border-gold/20 pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-xl font-playfair gold-text mb-4">LUXURY BRAND</h3>
             <p className="text-offwhite/80 text-sm leading-relaxed">
@@ -14,18 +13,18 @@ export default function Footer() {
               customer service.
             </p>
             <div className="flex space-x-4 pt-4">
-              <a href="#" className="text-offwhite/70 hover:text-gold transition-colors">
+              <Link href="/" className="text-offwhite/70 hover:text-gold transition-colors">
                 <Facebook size={18} />
-              </a>
-              <a href="#" className="text-offwhite/70 hover:text-gold transition-colors">
+              </Link>
+              <Link href="/" className="text-offwhite/70 hover:text-gold transition-colors">
                 <Twitter size={18} />
-              </a>
-              <a href="#" className="text-offwhite/70 hover:text-gold transition-colors">
+              </Link>
+              <Link href="/" className="text-offwhite/70 hover:text-gold transition-colors">
                 <Instagram size={18} />
-              </a>
-              <a href="#" className="text-offwhite/70 hover:text-gold transition-colors">
+              </Link>
+              <Link href="/" className="text-offwhite/70 hover:text-gold transition-colors">
                 <Linkedin size={18} />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -52,7 +51,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {["Web Development", "Mobile Apps", "UI/UX Design", "Branding", "Digital Marketing"].map((item) => (
                 <li key={item}>
-                  <Link href="/services" className="text-offwhite/70 hover:text-gold transition-colors text-sm">
+                  <Link href="/service" className="text-offwhite/70 hover:text-gold transition-colors text-sm">
                     {item}
                   </Link>
                 </li>
@@ -80,25 +79,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Newsletter */}
-        <div className="mt-12 border-t border-gold/10 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-6 md:mb-0">
-              <h4 className="text-lg font-playfair text-offwhite mb-2">Subscribe to Our Newsletter</h4>
-              <p className="text-offwhite/70 text-sm">Stay updated with our latest news and offers</p>
-            </div>
-            <div className="flex w-full md:w-auto">
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="bg-black/50 border border-gold/30 text-offwhite px-4 py-2 focus:outline-none focus:border-gold w-full md:w-64"
-              />
-              <button className="bg-gold text-black px-4 py-2 hover:bg-gold-light transition-colors whitespace-nowrap">
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </div>
+     
 
         {/* Copyright */}
         <div className="mt-12 text-center">

@@ -591,7 +591,7 @@ export default function ServiceDetailPage() {
                   <h3 className="text-xl font-bold mb-3">{relatedService.title}</h3>
                   <p className="text-offwhite/70 mb-6">{relatedService.shortDesc}</p>
                   <Link
-                    href={`/services/${relatedService.id}`}
+                    href={`/service/${relatedService.id}`}
                     className="inline-flex items-center text-gold group-hover:text-gold-light transition-colors"
                   >
                     Learn More <ArrowRight size={16} className="ml-2 group-hover:ml-3 transition-all" />

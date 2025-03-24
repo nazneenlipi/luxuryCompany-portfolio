@@ -522,7 +522,7 @@ export default function AboutPage() {
                 Contact Us
               </Link>
               <Link
-                href="/services"
+                href="/service"
                 className="px-8 py-3 bg-transparent border border-gold text-gold hover:bg-gold/10 transition-colors duration-300 font-medium tracking-wide flex items-center justify-center"
               >
                 Our Services <ArrowRight size={16} className="ml-2" />

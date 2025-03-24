@@ -373,7 +373,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold mb-3">{service.title}</h3>
                 <p className="text-offwhite/70 mb-6">{service.description}</p>
                 <Link
-                  href="/services"
+                  href="/service"
                   className="inline-flex items-center text-gold group-hover:text-gold-light transition-colors"
                 >
                   Learn More{" "}
@@ -394,7 +394,7 @@ export default function Home() {
             className="text-center mt-12"
           >
             <Link
-              href="/services"
+              href="/service"
               className="px-8 py-3 bg-gold text-black hover:bg-gold-light transition-colors duration-300 font-medium tracking-wide inline-flex items-center"
             >
               View All Services <ChevronRight size={16} className="ml-2" />
@@ -755,7 +755,7 @@ export default function Home() {
                 Get Started
               </Link>
               <Link
-                href="/services"
+                href="/service"
                 className="px-8 py-3 bg-transparent border border-gold text-gold hover:bg-gold/10 transition-colors duration-300 font-medium tracking-wide"
               >
                 Explore Services
