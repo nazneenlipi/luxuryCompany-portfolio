@@ -1,11 +1,18 @@
-"use client"
+"use client";
 
-import { useRef } from "react"
-import Image from "next/image"
-import Link from "next/link"
-import { motion, useScroll, useTransform } from "framer-motion"
-import { ChevronRight, Award, Clock, Users, CheckCircle, ArrowRight } from "lucide-react"
-
+import { useRef } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import { motion, useScroll, useTransform } from "framer-motion";
+import {
+  ChevronRight,
+  Award,
+  Clock,
+  Users,
+  CheckCircle,
+  ArrowRight,
+} from "lucide-react";
+// import aboutImg from "@about.jpg"
 // Animation variants
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -14,7 +21,7 @@ const fadeIn = {
     y: 0,
     transition: { duration: 0.6 },
   },
-}
+};
 
 const staggerContainer = {
   hidden: { opacity: 0 },
@@ -24,55 +31,102 @@ const staggerContainer = {
       staggerChildren: 0.2,
     },
   },
-}
+};
 
 const services = [
   {
-    icon: "/placeholder.svg?height=40&width=40",
+    icon: "/web.webp",
     title: "Web Development",
-    description: "Custom websites with elegant design and powerful functionality",
+    description:
+      "Custom websites with elegant design and powerful functionality",
   },
   {
-    icon: "/placeholder.svg?height=40&width=40",
+    icon: "/web.webp",
     title: "Mobile Applications",
     description: "Native and cross-platform apps with seamless user experience",
   },
   {
-    icon: "/placeholder.svg?height=40&width=40",
+    icon: "/web.webp",
     title: "UI/UX Design",
-    description: "Intuitive interfaces that enhance user engagement and satisfaction",
+    description:
+      "Intuitive interfaces that enhance user engagement and satisfaction",
   },
   {
-    icon: "/placeholder.svg?height=40&width=40",
+    icon: "/web.webp",
     title: "Branding",
-    description: "Distinctive brand identity that resonates with your target audience",
+    description:
+      "Distinctive brand identity that resonates with your target audience",
   },
-]
+];
 
 const stats = [
   { value: "500+", label: "Happy Clients" },
   { value: "1200+", label: "Projects Completed" },
   { value: "15+", label: "Years Experience" },
   { value: "25+", label: "Industry Awards" },
-]
+];
 
 const clients = [
-  "/placeholder.svg?height=60&width=120",
-  "/placeholder.svg?height=60&width=120",
-  "/placeholder.svg?height=60&width=120",
-  "/placeholder.svg?height=60&width=120",
-  "/placeholder.svg?height=60&width=120",
-]
+  "/logo.jpg",
+  "/logo.jpg",
+  "/logo.jpg",
+  "/logo.jpg",
+  "/logo.jpg",
+];
+const projects = [
+  {
+    id: 1,
+    image: "/19.jpg",
+    title: "Project Title 1",
+    category: "Web Design / Development",
+    link: "/contact",
+  },
+  {
+    id: 2,
+    image: "/20.jpg",
+    title: "Project Title 2",
+    category: "Web Design / Development",
+    link: "/contact",
+  },
+  {
+    id: 3,
+    image: "/21.jpg",
+    title: "Project Title 3",
+    category: "Web Design / Development",
+    link: "/contact",
+  },
+  {
+    id: 4,
+    image: "/22.jpg",
+    title: "Project Title 4",
+    category: "Web Design / Development",
+    link: "/contact",
+  },
+  {
+    id: 5,
+    image: "/23.jpg",
+    title: "Project Title 5",
+    category: "Web Design / Development",
+    link: "/contact",
+  },
+  {
+    id: 6,
+    image: "/24.jpg",
+    title: "Project Title 6",
+    category: "Web Design / Development",
+    link: "/contact",
+  },
+];
 
 export default function Home() {
-  const targetRef = useRef<HTMLDivElement>(null)
+  const targetRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: targetRef,
     offset: ["start end", "end start"],
-  })
+  });
 
-  const opacity = useTransform(scrollYProgress, [0, 0.5], [0, 1])
-  const y = useTransform(scrollYProgress, [0, 0.5], [100, 0])
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
+  const y = useTransform(scrollYProgress, [0, 0.5], [100, 0]);
 
   return (
     <>
@@ -98,18 +152,28 @@ export default function Home() {
             variants={staggerContainer}
             className="max-w-3xl mx-auto text-center"
           >
-            <motion.h1 variants={fadeIn} className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <motion.h1
+              variants={fadeIn}
+              className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight"
+            >
               <span className="gold-text">We Build Smart Solutions</span>
               <br />
               <span className="text-offwhite">for Your Business</span>
             </motion.h1>
 
-            <motion.p variants={fadeIn} className="text-offwhite/90 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
-              Elevating brands with sophisticated design and innovative technology solutions that drive growth and
-              enhance customer experience.
+            <motion.p
+              variants={fadeIn}
+              className="text-offwhite/90 text-lg md:text-xl mb-8 max-w-2xl mx-auto"
+            >
+              Elevating brands with sophisticated design and innovative
+              technology solutions that drive growth and enhance customer
+              experience.
             </motion.p>
 
-            <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
+            <motion.div
+              variants={fadeIn}
+              className="flex flex-col sm:flex-row gap-4 justify-center"
+            >
               <Link
                 href="/contact"
                 className="px-8 py-3 bg-gold text-black hover:bg-gold-light transition-colors duration-300 font-medium tracking-wide"
@@ -159,43 +223,67 @@ export default function Home() {
           >
             <motion.div variants={fadeIn} className="order-2 md:order-1">
               <div className="inline-block mb-4">
-                <span className="text-gold border-b border-gold pb-1 uppercase text-sm tracking-wider">About Us</span>
+                <span className="text-gold border-b border-gold pb-1 uppercase text-sm tracking-wider">
+                  About Us
+                </span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-                Crafting <span className="gold-text">Exceptional Digital</span> Experiences Since 2008
+                Crafting <span className="gold-text">Exceptional Digital</span>{" "}
+                Experiences Since 2008
               </h2>
               <p className="text-offwhite/80 mb-6 leading-relaxed">
-                We are a premium digital agency specializing in creating sophisticated solutions for businesses across
-                various industries. Our team of experts combines creativity with technical expertise to deliver results
-                that exceed expectations.
+                We are a premium digital agency specializing in creating
+                sophisticated solutions for businesses across various
+                industries. Our team of experts combines creativity with
+                technical expertise to deliver results that exceed expectations.
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="flex items-start">
-                  <CheckCircle size={20} className="text-gold mr-3 mt-1 shrink-0" />
+                  <CheckCircle
+                    size={20}
+                    className="text-gold mr-3 mt-1 shrink-0"
+                  />
                   <div>
                     <h4 className="font-bold mb-1">Innovation</h4>
-                    <p className="text-offwhite/70 text-sm">Cutting-edge solutions</p>
+                    <p className="text-offwhite/70 text-sm">
+                      Cutting-edge solutions
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle size={20} className="text-gold mr-3 mt-1 shrink-0" />
+                  <CheckCircle
+                    size={20}
+                    className="text-gold mr-3 mt-1 shrink-0"
+                  />
                   <div>
                     <h4 className="font-bold mb-1">Quality</h4>
-                    <p className="text-offwhite/70 text-sm">Attention to detail</p>
+                    <p className="text-offwhite/70 text-sm">
+                      Attention to detail
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle size={20} className="text-gold mr-3 mt-1 shrink-0" />
+                  <CheckCircle
+                    size={20}
+                    className="text-gold mr-3 mt-1 shrink-0"
+                  />
                   <div>
                     <h4 className="font-bold mb-1">Reliability</h4>
-                    <p className="text-offwhite/70 text-sm">Consistent performance</p>
+                    <p className="text-offwhite/70 text-sm">
+                      Consistent performance
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <CheckCircle size={20} className="text-gold mr-3 mt-1 shrink-0" />
+                  <CheckCircle
+                    size={20}
+                    className="text-gold mr-3 mt-1 shrink-0"
+                  />
                   <div>
                     <h4 className="font-bold mb-1">Support</h4>
-                    <p className="text-offwhite/70 text-sm">24/7 client assistance</p>
+                    <p className="text-offwhite/70 text-sm">
+                      24/7 client assistance
+                    </p>
                   </div>
                 </div>
               </div>
@@ -206,12 +294,22 @@ export default function Home() {
                 Learn More About Us <ArrowRight size={16} className="ml-2" />
               </Link>
             </motion.div>
-            <motion.div variants={fadeIn} className="order-1 md:order-2 relative">
+            <motion.div
+              variants={fadeIn}
+              className="order-1 md:order-2 relative"
+            >
               <div className="relative h-[500px] w-full">
-                <Image src="/placeholder.svg?height=600&width=500" alt="About Us" fill className="object-cover" />
+                <Image
+                  src="/about.jpg"
+                  alt="About Us"
+                  fill
+                  className="object-cover"
+                />
                 <div className="absolute -bottom-6 -left-6 bg-black p-6 border border-gold/30">
                   <p className="text-4xl font-bold gold-text">15+</p>
-                  <p className="text-offwhite/80 text-sm">Years of Experience</p>
+                  <p className="text-offwhite/80 text-sm">
+                    Years of Experience
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -230,13 +328,23 @@ export default function Home() {
             className="text-center mb-16"
           >
             <motion.div variants={fadeIn} className="inline-block mb-4">
-              <span className="text-gold border-b border-gold pb-1 uppercase text-sm tracking-wider">Our Services</span>
+              <span className="text-gold border-b border-gold pb-1 uppercase text-sm tracking-wider">
+                Our Services
+              </span>
             </motion.div>
-            <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-bold mb-6">
-              Premium <span className="gold-text">Solutions</span> for Your Business
+            <motion.h2
+              variants={fadeIn}
+              className="text-3xl md:text-4xl font-bold mb-6"
+            >
+              Premium <span className="gold-text">Solutions</span> for Your
+              Business
             </motion.h2>
-            <motion.p variants={fadeIn} className="text-offwhite/80 max-w-2xl mx-auto">
-              We offer a comprehensive range of services designed to help your business thrive in the digital landscape.
+            <motion.p
+              variants={fadeIn}
+              className="text-offwhite/80 max-w-2xl mx-auto"
+            >
+              We offer a comprehensive range of services designed to help your
+              business thrive in the digital landscape.
             </motion.p>
           </motion.div>
 
@@ -268,7 +376,11 @@ export default function Home() {
                   href="/services"
                   className="inline-flex items-center text-gold group-hover:text-gold-light transition-colors"
                 >
-                  Learn More <ArrowRight size={16} className="ml-2 group-hover:ml-3 transition-all" />
+                  Learn More{" "}
+                  <ArrowRight
+                    size={16}
+                    className="ml-2 group-hover:ml-3 transition-all"
+                  />
                 </Link>
               </motion.div>
             ))}
@@ -294,10 +406,18 @@ export default function Home() {
       {/* Why Choose Us Section */}
       <section className="py-20 bg-black" ref={targetRef}>
         <div className="container mx-auto px-4 md:px-6">
-          <motion.div style={{ opacity, y }} className="grid md:grid-cols-2 gap-12 items-center">
+          <motion.div
+            style={{ opacity, y }}
+            className="grid md:grid-cols-2 gap-12 items-center"
+          >
             <div className="relative">
               <div className="relative h-[500px] w-full">
-                <Image src="/placeholder.svg?height=600&width=500" alt="Why Choose Us" fill className="object-cover" />
+                <Image
+                  src="/choose.png"
+                  alt="Why Choose Us"
+                  fill
+                  className="object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent"></div>
               </div>
             </div>
@@ -308,11 +428,13 @@ export default function Home() {
                 </span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
-                The <span className="gold-text">Perfect Blend</span> of Creativity and Technology
+                The <span className="gold-text">Perfect Blend</span> of
+                Creativity and Technology
               </h2>
               <p className="text-offwhite/80 mb-8 leading-relaxed">
-                We combine artistic vision with technical expertise to create solutions that are not only visually
-                stunning but also functionally superior.
+                We combine artistic vision with technical expertise to create
+                solutions that are not only visually stunning but also
+                functionally superior.
               </p>
 
               <div className="space-y-6">
@@ -323,7 +445,8 @@ export default function Home() {
                   <div>
                     <h4 className="font-bold mb-1">Award-Winning Design</h4>
                     <p className="text-offwhite/70">
-                      Our designs have been recognized by industry leaders for their excellence and innovation.
+                      Our designs have been recognized by industry leaders for
+                      their excellence and innovation.
                     </p>
                   </div>
                 </div>
@@ -334,7 +457,8 @@ export default function Home() {
                   <div>
                     <h4 className="font-bold mb-1">On-Time Delivery</h4>
                     <p className="text-offwhite/70">
-                      We understand the importance of deadlines and ensure timely completion of all projects.
+                      We understand the importance of deadlines and ensure
+                      timely completion of all projects.
                     </p>
                   </div>
                 </div>
@@ -345,7 +469,8 @@ export default function Home() {
                   <div>
                     <h4 className="font-bold mb-1">Dedicated Support Team</h4>
                     <p className="text-offwhite/70">
-                      Our support team is available 24/7 to address any concerns or questions you may have.
+                      Our support team is available 24/7 to address any concerns
+                      or questions you may have.
                     </p>
                   </div>
                 </div>
@@ -367,8 +492,12 @@ export default function Home() {
           >
             {stats.map((stat, index) => (
               <motion.div key={index} variants={fadeIn} className="text-center">
-                <p className="text-4xl md:text-5xl font-bold gold-text mb-2">{stat.value}</p>
-                <p className="text-offwhite/70 uppercase text-sm tracking-wider">{stat.label}</p>
+                <p className="text-4xl md:text-5xl font-bold gold-text mb-2">
+                  {stat.value}
+                </p>
+                <p className="text-offwhite/70 uppercase text-sm tracking-wider">
+                  {stat.label}
+                </p>
               </motion.div>
             ))}
           </motion.div>
@@ -390,12 +519,18 @@ export default function Home() {
                 Our Portfolio
               </span>
             </motion.div>
-            <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-bold mb-6">
+            <motion.h2
+              variants={fadeIn}
+              className="text-3xl md:text-4xl font-bold mb-6"
+            >
               Our <span className="gold-text">Recent Projects</span>
             </motion.h2>
-            <motion.p variants={fadeIn} className="text-offwhite/80 max-w-2xl mx-auto">
-              Explore our latest work and see how we've helped businesses achieve their goals through innovative
-              solutions.
+            <motion.p
+              variants={fadeIn}
+              className="text-offwhite/80 max-w-2xl mx-auto"
+            >
+              Explore our latest work and see how we've helped businesses
+              achieve their goals through innovative solutions.
             </motion.p>
           </motion.div>
 
@@ -406,21 +541,29 @@ export default function Home() {
             variants={staggerContainer}
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
-            {[1, 2, 3, 4, 5, 6].map((item, index) => (
-              <motion.div key={index} variants={fadeIn} className="group relative overflow-hidden">
+            {projects.map((project) => (
+              <motion.div
+                key={project.id}
+                variants={fadeIn}
+                className="group relative overflow-hidden"
+              >
                 <div className="relative h-[300px] w-full">
                   <Image
-                    src={`/placeholder.svg?height=300&width=400&text=Project+${item}`}
-                    alt={`Project ${item}`}
+                    src={project.image}
+                    alt={project.title}
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                  <h3 className="text-xl font-bold mb-2">Project Title {item}</h3>
-                  <p className="text-offwhite/80 mb-4">Web Design / Development</p>
+                  <h3 className="text-xl font-bold mb-2">
+                  {project.title}
+                  </h3>
+                  <p className="text-offwhite/80 mb-4">
+                  {project.category}
+                  </p>
                   <Link
-                    href={`/portfolio/project-${item}`}
+                    href="/contact"
                     className="text-gold hover:text-gold-light transition-colors inline-flex items-center"
                   >
                     View Details <ArrowRight size={16} className="ml-2" />
@@ -458,13 +601,22 @@ export default function Home() {
             className="text-center mb-16"
           >
             <motion.div variants={fadeIn} className="inline-block mb-4">
-              <span className="text-gold border-b border-gold pb-1 uppercase text-sm tracking-wider">Testimonials</span>
+              <span className="text-gold border-b border-gold pb-1 uppercase text-sm tracking-wider">
+                Testimonials
+              </span>
             </motion.div>
-            <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-bold mb-6">
+            <motion.h2
+              variants={fadeIn}
+              className="text-3xl md:text-4xl font-bold mb-6"
+            >
               What Our <span className="gold-text">Clients Say</span>
             </motion.h2>
-            <motion.p variants={fadeIn} className="text-offwhite/80 max-w-2xl mx-auto">
-              Don't just take our word for it. Hear what our clients have to say about working with us.
+            <motion.p
+              variants={fadeIn}
+              className="text-offwhite/80 max-w-2xl mx-auto"
+            >
+              Don't just take our word for it. Hear what our clients have to say
+              about working with us.
             </motion.p>
           </motion.div>
 
@@ -478,14 +630,16 @@ export default function Home() {
             <div className="text-5xl text-gold/20 absolute top-6 left-6">"</div>
             <div className="relative z-10">
               <p className="text-offwhite/90 text-lg italic mb-8 leading-relaxed">
-                Working with Luxury Brand has been an exceptional experience. Their team's attention to detail and
-                commitment to excellence resulted in a website that perfectly captures our brand's essence. The project
-                was delivered on time and exceeded our expectations.
+                Working with Luxury Brand has been an exceptional experience.
+                Their team's attention to detail and commitment to excellence
+                resulted in a website that perfectly captures our brand's
+                essence. The project was delivered on time and exceeded our
+                expectations.
               </p>
               <div className="flex items-center">
                 <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
                   <Image
-                    src="/placeholder.svg?height=64&width=64"
+                    src="/men.jpg"
                     alt="Client"
                     width={64}
                     height={64}
@@ -508,7 +662,7 @@ export default function Home() {
             className="text-center mt-12"
           >
             <Link
-              href="/testimonials"
+              href="/contact"
               className="text-gold hover:text-gold-light transition-colors inline-flex items-center"
             >
               Read More Testimonials <ArrowRight size={16} className="ml-2" />
@@ -576,13 +730,24 @@ export default function Home() {
             variants={staggerContainer}
             className="max-w-3xl mx-auto text-center"
           >
-            <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to <span className="gold-text">Transform</span> Your Business?
+            <motion.h2
+              variants={fadeIn}
+              className="text-3xl md:text-4xl font-bold mb-6"
+            >
+              Ready to <span className="gold-text">Transform</span> Your
+              Business?
             </motion.h2>
-            <motion.p variants={fadeIn} className="text-offwhite/90 text-lg mb-8">
-              Let's collaborate to create exceptional digital experiences that elevate your brand and drive results.
+            <motion.p
+              variants={fadeIn}
+              className="text-offwhite/90 text-lg mb-8"
+            >
+              Let's collaborate to create exceptional digital experiences that
+              elevate your brand and drive results.
             </motion.p>
-            <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
+            <motion.div
+              variants={fadeIn}
+              className="flex flex-col sm:flex-row gap-4 justify-center"
+            >
               <Link
                 href="/contact"
                 className="px-8 py-3 bg-gold text-black hover:bg-gold-light transition-colors duration-300 font-medium tracking-wide"
@@ -600,6 +765,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  )
+  );
 }
-
