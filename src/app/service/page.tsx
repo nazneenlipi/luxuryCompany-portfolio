@@ -379,14 +379,14 @@ export default function ServicesPage() {
                   "Working with Luxury Brand has been an exceptional experience. Their team's attention to detail and commitment to excellence resulted in a website that perfectly captures our brand's essence.",
                 name: "John Smith",
                 position: "CEO, Global Enterprises",
-                image: "/placeholder.svg?height=64&width=64",
+                image: "/men.jpg",
               },
               {
                 quote:
                   "The mobile application developed by Luxury Brand has significantly improved our customer engagement and sales. Their innovative approach and technical expertise are truly impressive.",
                 name: "Sarah Johnson",
                 position: "Marketing Director, Tech Solutions",
-                image: "/placeholder.svg?height=64&width=64",
+                image: "/men.jpg",
               },
             ].map((testimonial, index) => (
               <motion.div key={index} variants={fadeIn} className="bg-black border border-gold/20 p-8 relative">
