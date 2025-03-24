@@ -29,25 +29,25 @@ const team = [
   {
     name: "Alexander Smith",
     position: "Founder & CEO",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/men.jpg",
     bio: "With over 20 years of experience in the industry, Alexander founded Luxury Brand with a vision to create exceptional digital experiences.",
   },
   {
     name: "Sophia Johnson",
     position: "Creative Director",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/men.jpg",
     bio: "Sophia leads our creative team with her innovative approach to design and branding, ensuring each project exceeds client expectations.",
   },
   {
     name: "Michael Chen",
     position: "Technical Director",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/men.jpg",
     bio: "Michael oversees all technical aspects of our projects, bringing cutting-edge solutions and flawless implementation to every client.",
   },
   {
     name: "Emily Williams",
     position: "Client Relations Manager",
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/men.jpg",
     bio: "Emily ensures seamless communication between our team and clients, making sure every project runs smoothly from start to finish.",
   },
 ]
@@ -126,7 +126,7 @@ export default function AboutPage() {
           >
             <motion.div variants={fadeIn}>
               <div className="relative h-[500px] w-full">
-                <Image src="/placeholder.svg?height=600&width=500" alt="Our History" fill className="object-cover" />
+                <Image src="/about.jpg" alt="Our History" fill className="object-cover" />
                 <div className="absolute -bottom-6 -right-6 bg-black p-6 border border-gold/30">
                   <p className="text-4xl font-bold gold-text">2008</p>
                   <p className="text-offwhite/80 text-sm">Year Founded</p>
@@ -463,14 +463,14 @@ export default function AboutPage() {
             <motion.div variants={fadeIn} className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <Image
-                  src="/placeholder.svg?height=300&width=250&text=Office+Life"
+                  src="/28.jpg"
                   alt="Office Life"
                   width={250}
                   height={300}
                   className="w-full h-auto"
                 />
                 <Image
-                  src="/placeholder.svg?height=200&width=250&text=Team+Building"
+                  src="/29.jpg"
                   alt="Team Building"
                   width={250}
                   height={200}
@@ -479,14 +479,14 @@ export default function AboutPage() {
               </div>
               <div className="space-y-4 pt-8">
                 <Image
-                  src="/placeholder.svg?height=200&width=250&text=Brainstorming"
+                  src="/30.jpg"
                   alt="Brainstorming"
                   width={250}
                   height={200}
                   className="w-full h-auto"
                 />
                 <Image
-                  src="/placeholder.svg?height=300&width=250&text=Company+Event"
+                  src="/31.jpg"
                   alt="Company Event"
                   width={250}
                   height={300}
