@@ -25,7 +25,21 @@ const staggerContainer = {
   },
 }
 
-const team = [
+
+interface TeamMember {
+  name: string;
+  position: string;
+  image: string;
+  bio: string;
+}
+
+interface Value {
+  icon: React.ReactNode; // Use React.ReactNode for JSX elements
+  title: string;
+  description: string;
+}
+
+const team: TeamMember[] = [
   {
     name: "Alexander Smith",
     position: "Founder & CEO",
@@ -50,14 +64,14 @@ const team = [
     image: "/men.jpg",
     bio: "Emily ensures seamless communication between our team and clients, making sure every project runs smoothly from start to finish.",
   },
-]
+];
 
-const values = [
+const values: Value[] = [
   {
     icon: <Users className="text-gold" size={24} />,
     title: "Client-Centric Approach",
     description:
-      "We prioritize our clients' needs and goals, ensuring every solution is tailored to their specific requirements.",
+      "We prioritize our clients needs and goals, ensuring every solution is tailored to their specific requirements.",
   },
   {
     icon: <Award className="text-gold" size={24} />,
@@ -77,7 +91,7 @@ const values = [
     description:
       "We maintain the highest standards of integrity in all our dealings, with transparent communication throughout the project lifecycle.",
   },
-]
+];
 
 export default function AboutPage() {
   return (
@@ -148,7 +162,7 @@ export default function AboutPage() {
                 comprehensive digital agency serving clients across various industries.
               </p>
               <p className="text-offwhite/80 mb-6 leading-relaxed">
-                Over the years, we've expanded our services to include web development, mobile applications, branding,
+                Over the years, weve expanded our services to include web development, mobile applications, branding,
                 and digital marketing, always maintaining our commitment to quality and client satisfaction.
               </p>
               <div className="space-y-4 mb-8">
@@ -512,7 +526,7 @@ export default function AboutPage() {
               Ready to <span className="gold-text">Work</span> With Us?
             </motion.h2>
             <motion.p variants={fadeIn} className="text-offwhite/90 text-lg mb-8">
-              Let's collaborate to create exceptional digital experiences that elevate your brand and drive results.
+              Lets collaborate to create exceptional digital experiences that elevate your brand and drive results.
             </motion.p>
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

@@ -93,7 +93,7 @@ const services = [
       {
         title: "Strategy & Planning",
         description:
-          "We define your app's purpose, target audience, and key features to create a comprehensive development roadmap.",
+          "We define your apps purpose, target audience, and key features to create a comprehensive development roadmap.",
       },
       {
         title: "UI/UX Design",
@@ -352,7 +352,7 @@ export default function ServiceDetailPage() {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-black px-4">
         <h1 className="text-3xl font-bold mb-4">Service Not Found</h1>
-        <p className="text-offwhite/80 mb-8">The service you're looking for doesn't exist or has been moved.</p>
+        <p className="text-offwhite/80 mb-8">The service youre looking for doesnt exist or has been moved.</p>
         <Link
           href="/service"
           className="px-8 py-3 bg-gold text-black hover:bg-gold-light transition-colors duration-300 font-medium tracking-wide"

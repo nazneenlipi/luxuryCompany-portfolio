@@ -376,7 +376,7 @@ export default function ServicesPage() {
             {[
               {
                 quote:
-                  "Working with Luxury Brand has been an exceptional experience. Their team's attention to detail and commitment to excellence resulted in a website that perfectly captures our brand's essence.",
+                  "Working with Luxury Brand has been an exceptional experience. Their teams attention to detail and commitment to excellence resulted in a website that perfectly captures our brands essence.",
                 name: "John Smith",
                 position: "CEO, Global Enterprises",
                 image: "/men.jpg",
@@ -504,7 +504,7 @@ export default function ServicesPage() {
               Ready to <span className="gold-text">Transform</span> Your Business?
             </motion.h2>
             <motion.p variants={fadeIn} className="text-offwhite/90 text-lg mb-8">
-              Let's collaborate to create exceptional digital experiences that elevate your brand and drive results.
+              Lets collaborate to create exceptional digital experiences that elevate your brand and drive results.
             </motion.p>
             <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

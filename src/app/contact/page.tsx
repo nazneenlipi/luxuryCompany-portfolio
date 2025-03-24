@@ -46,7 +46,7 @@ export default function ContactPage() {
     e.preventDefault()
     // Handle form submission logic here
     console.log(formData)
-    alert("Thank you for your message. We'll get back to you soon!")
+    alert("Thank you for your message. Well get back to you soon!")
     setFormData({
       name: "",
       email: "",
@@ -79,12 +79,12 @@ export default function ContactPage() {
               <span className="text-gold border-b border-gold pb-1 uppercase text-sm tracking-wider">Get In Touch</span>
             </motion.div>
             <motion.h1 variants={fadeIn} className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Let's <span className="gold-text">Connect</span>
+              Let us <span className="gold-text">Connect</span>
             </motion.h1>
 
             <motion.p variants={fadeIn} className="text-offwhite/90 text-lg md:text-xl mb-8">
-              Have a project in mind or want to learn more about our services? We'd love to hear from you. Reach out to
-              us and let's start a conversation.
+              Have a project in mind or want to learn more about our services? We had love to hear from you. Reach out to
+              us and let us start a conversation.
             </motion.p>
           </motion.div>
         </div>

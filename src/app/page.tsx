@@ -529,7 +529,7 @@ export default function Home() {
               variants={fadeIn}
               className="text-offwhite/80 max-w-2xl mx-auto"
             >
-              Explore our latest work and see how we've helped businesses
+              Explore our latest work and see how we have helped businesses
               achieve their goals through innovative solutions.
             </motion.p>
           </motion.div>
@@ -615,7 +615,7 @@ export default function Home() {
               variants={fadeIn}
               className="text-offwhite/80 max-w-2xl mx-auto"
             >
-              Don't just take our word for it. Hear what our clients have to say
+              Donot just take our word for it. Hear what our clients have to say
               about working with us.
             </motion.p>
           </motion.div>
@@ -631,8 +631,8 @@ export default function Home() {
             <div className="relative z-10">
               <p className="text-offwhite/90 text-lg italic mb-8 leading-relaxed">
                 Working with Luxury Brand has been an exceptional experience.
-                Their team's attention to detail and commitment to excellence
-                resulted in a website that perfectly captures our brand's
+                Their teams attention to detail and commitment to excellence
+                resulted in a website that perfectly captures our brands
                 essence. The project was delivered on time and exceeded our
                 expectations.
               </p>
@@ -741,7 +741,7 @@ export default function Home() {
               variants={fadeIn}
               className="text-offwhite/90 text-lg mb-8"
             >
-              Let's collaborate to create exceptional digital experiences that
+              Lets collaborate to create exceptional digital experiences that
               elevate your brand and drive results.
             </motion.p>
             <motion.div
