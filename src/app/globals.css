@@ -45,7 +45,12 @@ h1, h2, h3, h4, h5, h6 {
 .text-offwhite {
   color: #EAEAEA;
 }
-
+.text-black{
+  color:#000000;
+}
+.hover\.text-black{
+  color:#000000;
+}
 .bg-gold, .text-gold {
   color: #D4AF37;
 }

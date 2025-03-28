@@ -4,15 +4,9 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
+import { navItems } from "../../data"
 
-const navItems = [
-  { name: "Home", path: "/" },
-  { name: "About", path: "/about" },
-  { name: "Services", path: "/service" },
-  { name: "Portfolio", path: "/portfolio" },
-  { name: "Contact", path: "/contact" },
 
-]
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -57,7 +51,7 @@ export default function Header() {
             ))}
             <Link
               href="/contact"
-              className="px-6 py-2 bg-transparent border border-gold text-gold hover:bg-gold hover:text-black transition-all duration-300 text-sm uppercase tracking-wider"
+              className="px-6 py-2 bg-transparent border border-gold text-gold hover:bg-white hover:text-black transition-all duration-300 text-sm uppercase tracking-wider"
             >
               Get a Quote
             </Link>
@@ -93,7 +87,7 @@ export default function Header() {
               ))}
               <Link
                 href="/contact"
-                className="mt-4 px-6 py-2 bg-transparent border border-gold text-gold hover:bg-gold hover:text-black transition-all duration-300 text-sm uppercase tracking-wider"
+                className="mt-4 px-6 py-2 bg-transparent border border-gold text-gold hover:bg-white hover:text-black transition-all duration-300 text-sm uppercase tracking-wider"
                 onClick={() => setIsOpen(false)}
               >
                 Get a Quote
