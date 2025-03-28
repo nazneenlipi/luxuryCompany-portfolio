@@ -22,7 +22,7 @@ Check out the live version of this portfolio: <a href="https://luxury-company-po
 
 ## 📸 Screenshots
 
-![Home Page](2.jpg)
+![Home Page](public/2.jpg)
 
 ## 🎯 Purpose
 
