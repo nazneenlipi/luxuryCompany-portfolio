@@ -22,7 +22,7 @@ Check out the live version of this portfolio: <a href="https://luxury-company-po
 
 ## 📸 Screenshots
 
-> *(Add high-quality screenshots showcasing the portfolio's design and functionality.)*
+
 
 ## 🎯 Purpose
 
@@ -60,7 +60,7 @@ Contributions are welcome! If you'd like to improve this project, please fork th
 For any inquiries or collaborations, feel free to reach out:
 - **Email:** lipinazneen85@gmail.com
 - **LinkedIn:** (https://linkedin.com/in/nazneenlipi)
-- **Portfolio:** nazneen.info
+- **Portfolio:** (nazneen.info)
 
 ---
 
