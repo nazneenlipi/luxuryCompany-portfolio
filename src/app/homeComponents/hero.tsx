@@ -62,10 +62,10 @@ export const Hero = () => {
               className="flex flex-col sm:flex-row gap-4 justify-center "
             >
               <Link
-                href="/contact"
-                className="px-8 py-3 bg-gold text-black hover:text-black transition-colors duration-300 font-medium tracking-wide"
-              >
-                Get a Quote
+                href="/contact">
+              
+                <p className="px-8 py-3 bg-transparent border border-gold text-gold hover:bg-white transition-colors duration-300 font-medium tracking-wide flex items-center justify-center"
+             > Get a Quote</p>
               </Link>
               <Link
                 href="https://nazneen.info" 
