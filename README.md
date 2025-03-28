@@ -18,11 +18,11 @@ Check out the live version of this portfolio: <a href="https://luxury-company-po
 ## 🛠️ Tech Stack
 
 - **Frontend:** Next.js, React.js, TypeScript, Tailwind CSS, Framer Motion
-- **Deployment:** Vercel / Netlify
+- **Deployment:** Vercel 
 
 ## 📸 Screenshots
 
-![Home Page](public/2.jpg)
+![Home Page](https://github.com/nazneenlipi/luxuryCompany-portfolio/blob/main/public/2.jpg)
 
 ## 🎯 Purpose
 
