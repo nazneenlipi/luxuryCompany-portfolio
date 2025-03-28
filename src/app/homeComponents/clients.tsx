@@ -1,7 +1,7 @@
 import React from 'react'
 import { clients } from '../../../data'
 import Image from 'next/image'
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion} from "framer-motion";
 const fadeIn = {
     hidden: { opacity: 0, y: 20 },
     visible: {

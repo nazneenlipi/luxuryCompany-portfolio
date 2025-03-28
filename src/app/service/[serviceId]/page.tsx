@@ -6,6 +6,7 @@ import Link from "next/link"
 import { useParams } from "next/navigation"
 import { motion } from "framer-motion"
 import { ArrowRight, CheckCircle, ArrowLeft } from "lucide-react"
+import { Cta } from "@/components/cta"
 
 // Animation variants
 const fadeIn = {
@@ -603,40 +604,7 @@ export default function ServiceDetailPage() {
         </section>
       )}
 
-      {/* CTA Section */}
-      <section className="py-20 bg-black border-t border-gold/10">
-        <div className="container mx-auto px-4 md:px-6">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-            variants={staggerContainer}
-            className="max-w-3xl mx-auto text-center"
-          >
-            <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Elevate Your <span className="gold-text">{service.title}</span>?
-            </motion.h2>
-            <motion.p variants={fadeIn} className="text-offwhite/90 text-lg mb-8">
-              Contact us today to discuss your {service.title.toLowerCase()} needs and how we can help bring your vision
-              to life.
-            </motion.p>
-            <motion.div variants={fadeIn} className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/contact"
-                className="px-8 py-3 bg-gold text-black hover:bg-gold-light transition-colors duration-300 font-medium tracking-wide"
-              >
-                Get Started
-              </Link>
-              <Link
-                href="/portfolio"
-                className="px-8 py-3 bg-transparent border border-gold text-gold hover:bg-gold/10 transition-colors duration-300 font-medium tracking-wide"
-              >
-                View Our Work
-              </Link>
-            </motion.div>
-          </motion.div>
-        </div>
-      </section>
+ <Cta/>
     </>
   )
 }
