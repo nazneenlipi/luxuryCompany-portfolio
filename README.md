@@ -22,7 +22,7 @@ Check out the live version of this portfolio: <a href="https://luxury-company-po
 
 ## 📸 Screenshots
 
-![Home Page](public/2.jpg)
+![Home Page](2.jpg)
 
 ## 🎯 Purpose
 
@@ -61,8 +61,6 @@ For any inquiries or collaborations, feel free to reach out:
 - **Email:** lipinazneen85@gmail.com
 - **LinkedIn:** (https://linkedin.com/in/nazneenlipi)
 - **Portfolio:** (nazneen.info)
-
-
 
 Thank you for visiting this project! 
 
